@@ -1,0 +1,55 @@
+﻿#是否为测试环境(出测试包必须修改)
+devMode = true
+engineDevMode=true
+
+#是否需要异步发送信息  true online；  false test  在RequirmentService类中有用到
+async = false
+
+# 一次最多能查询到的司机数 在MongoDbUtil类中有用到
+maxCyzNum=500
+
+
+#本地测试数据库
+jdbcUrl = jdbc:mysql://192.168.0.11:3306/shabro?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+user = root
+password= 123456ssd
+loginServerUrl = http://192.168.0.11:8080/loginservice/login
+mongodbIP = 192.168.0.11
+
+#预发布数据库
+#jdbcUrl = jdbc:mysql://123.56.142.192:3306/shabro?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+#user = ssd_net
+#password= cqNAgrc_801
+#loginServerUrl = http://123.56.142.192:8080/loginservice/login
+#mongodbIP = 123.56.142.192
+
+#正式数据库
+#jdbcUrl = jdbc:mysql://10.165.123.226:3306/shabro?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+#user = ssd_net
+#assword= cqNAgrc_801
+#loginServerUrl = http://10.163.12.94:8080/loginservice/login
+#mongodbIP = 10.163.12.94
+
+#================================================================
+initialSize=1
+minIdle=1
+maxActivee=20
+versioncode = 1.0
+#===============================================================
+
+downloadUrl = http://shabro.oss-cn-beijing.aliyuncs.com/
+
+# 指定管理员账号，多个管理员用逗号分隔 --------------------------------
+# admin = test@test.com, otherAdmin@test.com
+
+# 邮件发送账号，用于激活注册账号与找回密码  ----------------------------
+# emailServer=test.com
+# fromEmail=no-reply@test.com
+# emailPass=yourPassword
+
+# cron4j 任务调度配置  ------------------------------------------
+# pvUpdate 每小时更新一次 project_page_view、share_page_view、feedback_page_view
+# cron4j=pvUpdate
+# pvUpdate.cron=0 * * * *
+# pvUpdate.class=com.jfinal.club.common.pageview.PageViewUpdateTask
+# pvUpdate.enable=true

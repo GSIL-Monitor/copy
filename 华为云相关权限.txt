@@ -1,0 +1,40 @@
+华为云服务器
+
+117.78.40.141  root   Ssdtest0001   jstatd -J-Djava.security.policy=/usr/local/abc/tomcat7.0/java.all.policy -J-Djava.rmi.server.hostname=117.78.40.141 & 
+JAVA_OPTS="-Djava.rmi.server.hostname=117.78.40.141  
+-Dcom.sun.management.jmxremote  
+-Dcom.sun.management.jmxremote.port=9876  
+-Dcom.sun.management.jmxremote.ssl=false  
+-Dcom.sun.management.jmxremote.authenticate=false $JAVA_OPTS"  
+export JAVA_OPTS  
+
+用户名：root
+密码：Ssx@shabro1223
+
+shabrother
+shabrother68526666
+
+云数据库内网ip   192.168.0.48 ssd_cqna  cqNAgrc_cjns#17
+
+华为云： mongodb 123.56.142.192
+
+跳板机：49.4.71.106   root  Ssd@2018
+
+登录服务：http://49.4.94.16:8085/loginservice/login
+同城配送后台：http://49.4.94.16:8081/backstagecityapi
+干线后台： http://49.4.94.16:8082/backstageapi
+商城后台：http://49.4.94.16:8083/mallapi/
+ERP   http://49.4.85.198:8080/erpapi/index.jsp
+合作伙伴 http://49.4.85.198:8081/partnerapi
+
+阿里云域名对应ip：
+www.yunlihui.cn------->123.56.131.239
+backstage.yunlihui.cn------>112.126.78.165
+erp.yunlihui.cn------->112.126.78.165
+partner.yunlihui.cn------->112.126.78.165
+
+华为云域名对应ip：
+www.yunlihui.cn------->49.4.81.159
+backstage.yunlihui.cn------>49.4.94.16
+erp.yunlihui.cn------->49.4.94.16
+partner.yunlihui.cn------->49.4.94.16

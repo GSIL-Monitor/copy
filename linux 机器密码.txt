@@ -1,0 +1,23 @@
+192.168.0.11  root shift+1234+1234+4231
+
+192.168.0.10 root:ssx!@#$1234 shabro:!@#$4231
+
+
+192.168.0.11  测试环境维护
+重启下面的程序必须先查看是否已启动，重启之前需要先停止
+
+1. monogodb  停止使用 kill 2 pid， 切记不要用kill -9
+/mnt/local/mongodb/mongo/bin/mongod --dbpath=/mnt/local/shabro/mongo/yunlihui --logpath=/mnt/exd/mongodb/logs --logappend --port=27017 --fork --bind_ip=192.168.0.11 --auth
+
+2. 启动zookeeper  停止使用./zkServer.sh stop
+cd /usr/zookeeper-3.4.12/bin
+[root@localhost bin]# ./zkServer.sh start
+ZooKeeper JMX enabled by default
+Using config: /usr/zookeeper-3.4.12/bin/../conf/zoo.cfg
+Starting zookeeper ... STARTED
+[root@localhost bin]# 
+
+
+mongodb机器用户名：密码
+root:Shabro11
+mongo:cqSSD!18
